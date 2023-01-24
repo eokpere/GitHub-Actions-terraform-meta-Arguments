@@ -46,9 +46,8 @@ name: 'Terraform'
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "destroy" ]
   pull_request:
-    branches: [ "destroy"]
 
 permissions:
   id-token: write # This is required for aws oidc connection
